@@ -1,0 +1,26 @@
+---
+layout: minify
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include metadata.html %}
+  </head>
+
+  <body>
+    <canvas id="stars">
+      <p class="has-text-white">
+        Your browser does not support the canvas element.
+      </p>
+    </canvas>
+
+    <section class="hero is-fullheight has-text-centered">
+      <div class="hero-body">
+        <div class="container has-text-centered">{{ content }}</div>
+      </div>
+    </section>
+  </body>
+
+  <script src="/assets/js/stars.js"></script>
+</html>
